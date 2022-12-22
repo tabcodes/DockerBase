@@ -4,8 +4,6 @@ services:
     container_name: web
     build: docker/nginx
     restart: on-failure
-    # links:
-    #   - php
     ports:
       - 80:80
       - 443:443
