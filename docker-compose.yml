@@ -4,14 +4,14 @@ services:
     container_name: web
     build: docker/nginx
     restart: on-failure
-    links:
-      - php
+    # links:
+    #   - php
     ports:
       - 80:80
       - 443:443
     volumes:
       - ./application:/var/www/html
-      - ./docker/nginx/ssl:/etc/ssl
+      - ./docker/nginx/ssl:/etc/ssl/custom
     networks:
       - backend
   php:
