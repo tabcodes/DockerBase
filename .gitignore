@@ -1,2 +1,1 @@
-.initialized
-docker-compose/ssl/*
+.dockerenv
